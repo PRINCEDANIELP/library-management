@@ -1,5 +1,15 @@
 {
+  "version": 2,
+  "buildCommand": "cd libraryapp && npm install && npm run build",
+  "outputDirectory": "libraryapp/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
