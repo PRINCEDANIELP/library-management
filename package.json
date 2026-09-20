@@ -1,0 +1,7 @@
+{
+  "name": "reactdb-root",
+  "private": true,
+  "scripts": {
+    "build": "cd libraryapp && npm install && npm run build && cp -r dist ../public"
+  }
+}
